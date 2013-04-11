@@ -1,0 +1,12 @@
+# Defaul Charset
+AddDefaultCharset UTF-8
+
+<FilesMatch "\.(log|dat)$">
+# <files *.dat>
+deny from all
+</FilesMatch>
+
+<limit PUT>
+order allow,deny
+deny from all
+</limit>
